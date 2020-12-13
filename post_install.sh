@@ -7,7 +7,7 @@ echo "Download sickchill repo"
 git clone https://github.com/SickChill/SickChill.git /usr/local/app/sickchill
 
 echo "Install dependencies"
-pip install -r /usr/local/app/sickchill/requirements.txt
+pip3 install -r /usr/local/app/sickchill/requirements.txt
 
 echo "Create sickchill user"
 pw user add sickchill -c "Sickchill" -d /nonexistent -s /usr/bin/nologin -w no
